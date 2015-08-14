@@ -1,31 +1,30 @@
 {
-	  "json_format_version": 1,
+	"json_format_version": 1,
 
-    "transmitter0": {
-		    "frequency_mhz": 437.385,
-				"modulation"   : "2FSK",
-				"decoder"      : "AX25",
+	"transmitter0": {
+		"frequency_mhz": 437.385,
+		"modulation"   : "2FSK",
+		"decoder"      : "AX25",
 
-				"packets": {
+		"packets": {
+			"adc_packet": {
+				"__TYPE__": 0x5667,
 
-				    "adc_packet": {
-							  "__TYPE__": 0x5667,
+				"fields" : {
+					"adc1": "int32",
+					"__TYPE__": "int16",
 
-								"fields" : {
-										"adc1": "int32",
-										"__TYPE__": "int16",
+					"status_2_bytes": {
+						0: "boot_on_bit",
+						2: "status_bit",
+						9: "tra_bit"
+					},
 
-										"status_2_bytes": {
-											0: "boot_on_bit",
-											2: "status_bit",
-											9: "tra_bit"
-										},
-
-										"len": "uint32",
-										"data_with_len_specified": "array{len}",
-										"data_till_eof": "array{}",
-								},
-						},
+					"len": "uint32",
+					"data_with_len_specified": "array{len}",
+					"data_till_eof": "array{}",
 				},
+			},
 		},
+	},
 }
