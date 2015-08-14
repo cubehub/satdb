@@ -1,0 +1,12 @@
+{
+	"json_format_version" : 1,
+
+	"transmitters" : [{
+		"transmitter_name" : "UHF",
+		"frequency_mhz"    : 435.000,
+		"modulation"       : "2FSK",
+		"datarate"         : 9600,
+		"decoder"          : "AX25",
+		"callsign"         : "HNATIG"
+	}]
+}
