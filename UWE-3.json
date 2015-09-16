@@ -1,6 +1,7 @@
 {
     "transmitters": [
-        {   "transmitter_name": "UHF",
+        {
+            "transmitter_name": "UHF",
             "frequency_mhz": 437.385009765625,
             "modulation": {
                 "variant": "Fsk",
@@ -14,21 +15,22 @@
     ],
     "packets": {
         "beacon": [
-            {   "name": "__TYPE__",
+            {
+                "name": "__TYPE__",
                 "typ": {
                     "variant": "constant",
                     "fields": [ "0x80D7", "uint16be" ]
                 }
             },
-            {"name": "format", 			"typ": "uint8"},
-            {"name": "sid", 			"typ": "uint8"},
-            {"name": "asid", 			"typ": "uint8"},
-            {"name": "signature", 		"typ": "uint16be"},
-            {"name": "size", 			"typ": "uint8"},
-            {"name": "Beacon Rate", 	"typ": "uint8"},
+            {"name": "format",          "typ": "uint8"},
+            {"name": "sid",             "typ": "uint8"},
+            {"name": "asid",            "typ": "uint8"},
+            {"name": "signature",       "typ": "uint16be"},
+            {"name": "size",            "typ": "uint8"},
+            {"name": "Beacon Rate",     "typ": "uint8"},
             {"name": "Event Indicator", "typ": "uint16le"},
-            {"name": "Uptime", 			"typ": "uint32le"},
-            {"name": "Realtime Clock", 	"typ": "uint32le"},
+            {"name": "Uptime",          "typ": "uint32le"},
+            {"name": "Realtime Clock",  "typ": "uint32le"},
             {
                 "name": "State",
                 "typ": {
@@ -55,16 +57,16 @@
                     ]]
                 }
             },
-            {"name": "SOC Bat A", 			 "typ": "uint8"},
-            {"name": "SOC Bat B", 			 "typ": "uint8"},
-            {"name": "Voltage Bat A", 		 "typ": "uint16le"},
-            {"name": "Current Bat A", 		 "typ": "int16le"},
-            {"name": "Temperature Bat A", 	 "typ": "int8"},
-            {"name": "Voltage Bat B", 		 "typ": "uint16le"},
-            {"name": "Current Bat B", 		 "typ": "int16le"},
-            {"name": "Temperature Bat B", 	 "typ": "int8"},
-            {"name": "Power System Total", 	 "typ": "uint16le"},
-            {"name": "Temperature OBC", 	 "typ": "int8"},
+            {"name": "SOC Bat A",            "typ": "uint8"},
+            {"name": "SOC Bat B",            "typ": "uint8"},
+            {"name": "Voltage Bat A",        "typ": "uint16le"},
+            {"name": "Current Bat A",        "typ": "int16le"},
+            {"name": "Temperature Bat A",    "typ": "int8"},
+            {"name": "Voltage Bat B",        "typ": "uint16le"},
+            {"name": "Current Bat B",        "typ": "int16le"},
+            {"name": "Temperature Bat B",    "typ": "int8"},
+            {"name": "Power System Total",   "typ": "uint16le"},
+            {"name": "Temperature OBC",      "typ": "int8"},
             {"name": "Temperature Panel -X", "typ": "int8"},
             {"name": "Temperature Panel +X", "typ": "int8"},
             {"name": "Temperature Panel -Y", "typ": "int8"},
