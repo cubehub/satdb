@@ -14,63 +14,55 @@
     ],
     "packets": {
         "beacon": [
-            {   "name": "__TYPE__",
-                "typ": {
-                    "variant": "constant",
-                    "fields": [ "0x80D7", "uint16be" ]
-                }
-            },
-            {"name": "format", 			"typ": "uint8"},
-            {"name": "sid", 			"typ": "uint8"},
-            {"name": "asid", 			"typ": "uint8"},
-            {"name": "signature", 		"typ": "uint16be"},
-            {"name": "size", 			"typ": "uint8"},
-            {"name": "Beacon Rate", 	"typ": "uint8"},
-            {"name": "Event Indicator", "typ": "uint16le"},
-            {"name": "Uptime", 			"typ": "uint32le"},
-            {"name": "Realtime Clock", 	"typ": "uint32le"},
-            {
-                "name": "State",
-                "typ": {
-                    "variant": "bitmap",
+            ["__TYPE__",  { "variant": "constant", "fields": [ "0x80D7", "uint16be" ] }],
+            ["format",                 "uint8"],
+            ["sid",                    "uint8"],
+            ["asid",                   "uint8"],
+            ["signature",              "uint16be"],
+            ["size",                   "uint8"],
+            ["Beacon Rate",            "uint8"],
+            ["Event Indicator",        "uint16le"],
+            ["Uptime",                 "uint32le"],
+            ["Realtime Clock",         "uint32le"],
+            ["State",
+                {   "variant": "bitmap",
                     "fields": [[
                         {   "variant": "option",
-                            "fields": [ 0, "MCU A Active", "MCU B Active" ]
+                            "fields" : [ 0, "MCU A Active", "MCU B Active" ]
                         },
                         {   "variant": "descr",
-                            "fields": [ 1, "POWER PATH A on Bus" ]
+                            "fields" : [ 1, "POWER PATH A on Bus" ]
                         },
                         {   "variant": "descr",
-                            "fields": [ 2, "POWER PATH B on Bus" ]
+                            "fields" : [ 2, "POWER PATH B on Bus" ]
                         },
                         {   "variant": "option",
-                            "fields": [ 3, "RADIO A Active", "RADIO B Active" ]
+                            "fields" : [ 3, "RADIO A Active", "RADIO B Active" ]
                         },
                         {   "variant": "option",
-                            "fields": [ 4, "ADCS off", "ADCS on" ]
+                            "fields" : [ 4, "ADCS off", "ADCS on" ]
                         },
                         {   "variant": "range",
-                            "fields": [ 6, 7, { "2": "nominal mode" } ]
+                            "fields" : [ 6, 7, { "2": "nominal mode" } ]
                         }
-                    ]]
-                }
-            },
-            {"name": "SOC Bat A", 			 "typ": "uint8"},
-            {"name": "SOC Bat B", 			 "typ": "uint8"},
-            {"name": "Voltage Bat A", 		 "typ": "uint16le"},
-            {"name": "Current Bat A", 		 "typ": "int16le"},
-            {"name": "Temperature Bat A", 	 "typ": "int8"},
-            {"name": "Voltage Bat B", 		 "typ": "uint16le"},
-            {"name": "Current Bat B", 		 "typ": "int16le"},
-            {"name": "Temperature Bat B", 	 "typ": "int8"},
-            {"name": "Power System Total", 	 "typ": "uint16le"},
-            {"name": "Temperature OBC", 	 "typ": "int8"},
-            {"name": "Temperature Panel -X", "typ": "int8"},
-            {"name": "Temperature Panel +X", "typ": "int8"},
-            {"name": "Temperature Panel -Y", "typ": "int8"},
-            {"name": "Temperature Panel +Y", "typ": "int8"},
-            {"name": "Temperature Panel -Z", "typ": "int8"},
-            {"name": "Temperature Panel +Z", "typ": "int8"}
+                ]]}
+            ],
+            ["SOC Bat A",              "uint8"],
+            ["SOC Bat B",              "uint8"],
+            ["Voltage Bat A",          "uint16le"],
+            ["Current Bat A",          "int16le"],
+            ["Temperature Bat A",      "int8"],
+            ["Voltage Bat B",          "uint16le"],
+            ["Current Bat B",          "int16le"],
+            ["Temperature Bat B",      "int8"],
+            ["Power System Total",     "uint16le"],
+            ["Temperature OBC",        "int8"],
+            ["Temperature Panel -X",   "int8"],
+            ["Temperature Panel +X",   "int8"],
+            ["Temperature Panel -Y",   "int8"],
+            ["Temperature Panel +Y",   "int8"],
+            ["Temperature Panel -Z",   "int8"],
+            ["Temperature Panel +Z",   "int8"]
         ]
     }
 }
