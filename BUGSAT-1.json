@@ -11,5 +11,8 @@
                 "fields": [{ "callsign": "LU7AA" }]
             }
         }
-    ]
+    ],
+    "packets": {
+        
+    }
 }

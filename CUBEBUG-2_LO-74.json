@@ -11,5 +11,8 @@
                 "fields": [{ "callsign": "CUBEB2-6" }]
             }
         }
-    ]
+    ],
+    "packets": {
+
+    }
 }

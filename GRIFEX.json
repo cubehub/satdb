@@ -11,5 +11,8 @@
                 "fields": [{ "callsign": "KD8SPS" }]
             }
         }
-    ]
+    ],
+    "packets": {
+
+    }
 }
