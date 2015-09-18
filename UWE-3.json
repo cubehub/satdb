@@ -1,7 +1,7 @@
 {
     "transmitters": [
         {   "transmitter_name": "UHF",
-            "frequency_mhz": 437.385009765625,
+            "frequency_mhz": 437.385,
             "modulation": {
                 "variant": "Fsk",
                 "fields": [{ "deviation": 3500, "datarate_bps": 9600 }]
