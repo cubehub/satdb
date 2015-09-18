@@ -1,12 +1,15 @@
 {
-	"json_format_version" : 1,
-
-	"transmitters" : [{
-		"transmitter_name" : "UHF",
-		"frequency_mhz"    : 437.445,
-		"modulation"       : "2FSK",
-		"datarate"         : 9600,
-		"decoder"          : "AX25",
-		"callsign"         : "LU7AA"
-	}]
+    "transmitters": [
+        {   "transmitter_name": "UHF",
+            "frequency_mhz": 437.445,
+            "modulation": {
+                "variant": "Fsk",
+                "fields": [{ "deviation": 3500, "datarate_bps": 9600 }]
+            },
+            "decoder": {
+                "variant": "Ax25",
+                "fields": [{ "callsign": "LU7AA" }]
+            }
+        }
+    ]
 }
